@@ -1,6 +1,6 @@
 document.getElementById('searchBtn').addEventListener('click', function() {
     const ip = document.getElementById('ipInput').value;
-    const token = 'SEU_TOKEN_AQUI';  // Substitua pelo seu token da API Ipinfo
+    const token = '3cf491f0873ce6';  
 
     if (ip) {
         fetch(`https://ipinfo.io/${ip}/json?token=${token}`)
@@ -20,7 +20,7 @@ document.getElementById('searchBtn').addEventListener('click', function() {
                     <td><button class="remove-btn">x</button></td>
                 `;
 
-                // Adiciona o evento de clique ao botão "x"
+                
                 row.querySelector('.remove-btn').addEventListener('click', function() {
                     row.remove();
                 });
